@@ -1,0 +1,10 @@
+BUSINESS_PLAN.md
+JAIMEE_INTRO_EMAILS.md
+JAIMEE_OPERATIONS_CHECKLIST.md
+bots/
+.claude/
+netlify.toml
+*.pyc
+__pycache__/
+.env
+.env.*
