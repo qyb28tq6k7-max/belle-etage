@@ -359,8 +359,9 @@
     });
     document.getElementById('nl-form').addEventListener('submit', e => {
       e.preventDefault();
-      document.getElementById('nl-form').style.display = 'none';
-      document.getElementById('form-success').style.display = 'block';
+      const email = e.target.querySelector('input[type=email]').value.trim();
+      if (!email) return;
+      window.location.href = 'https://belleetage.beehiiv.com/subscribe?email=' + encodeURIComponent(email);
     });
   </script>
 </body>
